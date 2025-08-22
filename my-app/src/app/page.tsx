@@ -10,7 +10,7 @@ export default function Home() {
           <a href="#" className="text-white hover:text-red-500">START</a>
           <a href="#happy-hour" className="text-white hover:text-red-500">HAPPY HOUR</a>
           <a href="#about" className="text-white hover:text-red-500">ABOUT</a>
-          <a href="#flavors" className="text-white hover:text-red-500">FLAVORS</a>
+          <a href="#flavors" className="text-white hover:text-red-500">MENU</a>
           <a href="#gallery" className="text-white hover:text-red-500">GALLERY</a>
           <a href="#contact" className="text-white hover:text-red-500">CONTACT</a>
         </div>
@@ -71,46 +71,99 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Section */}
+      {/* About Section - Replaced with new content */}
       <section id="about" className="py-16 bg-black">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 text-center">ABOUT</h2>
-          <p className="text-center max-w-2xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          <h2 className="text-5xl md:text-7xl font-bold mb-8 text-center animate-pulse transition-all duration-1000 ease-in-out hover:text-red-500">
+            Da Nang's Ultimate Shisha Experience
+          </h2>
+          <p className="text-center max-w-2xl mx-auto mb-8">
+            Indulge in Indian & continental flavors, signature drinks, premium hookah (Indian & Russian hookah), and a vibrant bar scene in the heart of Da Nang
           </p>
+          
+          {/* Image Gallery Placeholder */}
+          
+          
+          {/* Enhanced Scrolling Text Banner */}
+          <div className="overflow-hidden py-6 bg-black border-y border-gray-800 mb-12">
+            <div className="marquee-container">
+              <div className="marquee-content text-2xl font-bold">
+                <span className="mx-6 text-red-500">The ultimate lounge</span>
+                <span className="mx-6">/</span>
+                <span className="mx-6 text-red-500">bar vibes</span>
+                <span className="mx-6">/</span>
+                <span className="mx-6 text-red-500">hookah haven</span>
+                <span className="mx-6">/</span>
+                <span className="mx-6 text-red-500">The ultimate lounge</span>
+                <span className="mx-6">/</span>
+                <span className="mx-6 text-red-500">bar vibes</span>
+                <span className="mx-6">/</span>
+                <span className="mx-6 text-red-500">hookah haven</span>
+                <span className="mx-6">/</span>
+              </div>
+            </div>
+          </div>
+          
+          {/* Why Sova Section */}
+          <h2 className="text-3xl font-bold mb-8 text-center">Why Sova?</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div className="text-center">
+              <h3 className="text-xl font-bold mb-4">Iconic Owl Theme</h3>
+              <p>Immerse yourself in an enchanting and stylish atmosphere.</p>
+            </div>
+            <div className="text-center">
+              <h3 className="text-xl font-bold mb-4">Exclusive VIP Spaces</h3>
+              <p>Perfect for private parties and celebrations.</p>
+            </div>
+            <div className="text-center">
+              <h3 className="text-xl font-bold mb-4">Open Hour</h3>
+              <p>Open till late, offering unforgettable moments every night.</p>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Flavors Section */}
+      {/* Menu Section (Replaced Flavors Section) */}
       <section id="flavors" className="py-16 bg-black relative">
         <div className="absolute inset-0 bg-black opacity-80 z-0">
           {/* Smoke background effect */}
         </div>
         <div className="container mx-auto px-4 z-10 relative">
-          <div className="flex flex-col md:flex-row justify-between">
-            <div className="md:w-1/2 mb-8 md:mb-0">
-              <h2 className="text-3xl font-bold mb-4">FLAVORS</h2>
-              <h3 className="text-xl text-red-500 italic mb-6">Classic</h3>
-              <ul className="space-y-2">
-                <li>Strawberry</li>
-                <li>Blueberry</li>
-                <li>Mint</li>
-                <li>Apple</li>
-                <li>Grape</li>
-                <li>Cherry</li>
-              </ul>
+          <h2 className="text-3xl font-bold mb-4 text-center">MENU</h2>
+          <div className="flex justify-center mb-8">
+            <div className="relative w-full max-w-4xl">
+              <Image 
+                src="/images/menu.png" 
+                alt="Menu" 
+                width={1000} 
+                height={800} 
+                className="w-full object-contain"
+              />
             </div>
-            <div className="md:w-1/2">
-              <h2 className="text-3xl font-bold mb-4">FLAVORS</h2>
-              <h3 className="text-xl text-red-500 italic mb-6">Classic</h3>
-              <ul className="space-y-2">
-                <li>Strawberry</li>
-                <li>Blueberry</li>
-                <li>Mint</li>
-                <li>Apple</li>
-                <li>Grape</li>
-                <li>Cherry</li>
-              </ul>
+          </div>
+          <div className="text-center">
+            <h3 className="text-xl text-red-500 italic mb-4">SHISHA PRICING</h3>
+            <div className="flex justify-center space-x-12">
+              <div>
+                <p className="text-lg font-bold">STANDARD</p>
+                <p className="text-2xl font-bold text-red-500">60K</p>
+              </div>
+              <div>
+                <p className="text-lg font-bold">ONE SHOT</p>
+                <p className="text-2xl font-bold text-red-500">34K</p>
+              </div>
+              <div>
+                <p className="text-lg font-bold">CIGAR STANDARD</p>
+                <p className="text-2xl font-bold text-red-500">70K</p>
+              </div>
+              <div>
+                <p className="text-lg font-bold">CIGAR ONESHOT</p>
+                <p className="text-2xl font-bold text-red-500">50K</p>
+              </div>
+              <div>
+                <p className="text-lg font-bold">OVERPACK</p>
+                <p className="text-2xl font-bold text-red-500">+10K</p>
+              </div>
             </div>
           </div>
         </div>
@@ -124,6 +177,11 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="h-64 bg-gray-800 relative overflow-hidden">
               {/* Gallery image 1 would go here */}
+              {/* <Image 
+                src="/images/menu.png" 
+                alt="" 
+                className="w-full object-contain"
+              /> */}
             </div>
             <div className="h-64 bg-gray-800 relative overflow-hidden">
               {/* Gallery image 2 would go here */}
@@ -138,21 +196,26 @@ export default function Home() {
       {/* Contact Section */}
       <section id="contact" className="py-16 bg-black">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-2 text-center">CONTACT &</h2>
-          <h3 className="text-xl text-red-500 italic mb-8 text-center">Hours</h3>
-          <div className="max-w-md mx-auto">
-            <div className="mb-4">
-              <p>Tuesday-Thursday: 5:00pm - 12:00 am</p>
-              <p>Friday-Sunday: 5:00pm - 2:00 am</p>
-            </div>
-            <div className="mb-4">
-              <p>Street Rd City</p>
-            </div>
-            <div className="mb-4">
-              <p>info@site.com</p>
-            </div>
-            <div>
-              <p>Instagram</p>
+          <h2 className="text-3xl font-bold mb-2 text-center">GET IN TOUCH</h2>
+          <h3 className="text-xl text-red-500 italic mb-8 text-center">Contact Us</h3>
+          <div className="max-w-2xl mx-auto">
+            <p className="text-center mb-8">
+              Got questions, feedback, or just want to say hi? We'd love to hear from you! Whether it's about our menu, location, or anything else, don't hesitate to reach out.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <h4 className="text-xl font-bold mb-4">Contacts</h4>
+                <p className="mb-2">29 An Thượng 29, Bắc Mỹ Phú, Ngũ Hành Sơn,</p>
+                <p className="mb-4">Đà Nẵng 550000, Vietnam</p>
+                <p className="mb-4">+84 387 400 376</p>
+              </div>
+              <div>
+                <h4 className="text-xl font-bold mb-4">Opening Hours</h4>
+                <p className="mb-4">Open Daily: 6PM - 2AM</p>
+                <h4 className="text-xl font-bold mb-4">Social</h4>
+                <p className="mb-2">Instagram</p>
+                <p>X (Twitter)</p>
+              </div>
             </div>
           </div>
         </div>
@@ -166,7 +229,7 @@ export default function Home() {
             <a href="#" className="text-white hover:text-red-500">START</a>
             <a href="#happy-hour" className="text-white hover:text-red-500">HAPPY HOUR</a>
             <a href="#about" className="text-white hover:text-red-500">ABOUT</a>
-            <a href="#flavors" className="text-white hover:text-red-500">FLAVORS</a>
+            <a href="#flavors" className="text-white hover:text-red-500">MENU</a>
             <a href="#gallery" className="text-white hover:text-red-500">GALLERY</a>
             <a href="#contact" className="text-white hover:text-red-500">CONTACT</a>
           </div>
@@ -176,8 +239,8 @@ export default function Home() {
       {/* Terms and Credits */}
       <div className="py-2 bg-black border-t border-gray-800 text-xs text-gray-500">
         <div className="container mx-auto px-4 flex justify-between">
-          <div>Terms & Support</div>
-          <div>Designed with Canva</div>
+          <div>® 2024 All Rights are reserved</div>
+
         </div>
       </div>
     </div>
